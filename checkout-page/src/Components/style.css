@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Montserrat:wght@300;400;800&family=Raleway:wght@200;500&family=Source+Sans+Pro:wght@300;400;600;700&family=Work+Sans:wght@300&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+}
+
+.Main{
+   display: grid; 
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+   gap: 0px;
+}
+.header{
+  margin: 30px;
+}
+.heading{
+   font-size: 25px;
+   font-weight: 400;
+   display:inline-block;
+   font-family:'Roboto', sans-serif;
+}
+.btn{
+    margin-left: 10px;
+    background: aliceblue;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: green;
+    font-weight:700;
+}
+/*product detail*/
+.box{
+    margin:15px;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 3;
+}
+.BoxDetail{
+    width: 800px;
+    height: 300px;
+    padding:15px;
+    display: grid;
+    grid-template-columns:auto auto auto;
+    grid-gap: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.prodprice{
+  font-weight: 700;
+  padding-top: 5px;
+  color: gray;
+}
+.prodName{
+    margin: 0;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.phone{
+    width: 50px;
+    height: 100px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 31%, rgba(8,40,142,1) 57%, rgba(9,9,121,0.7567401960784313) 69%, rgba(0,212,255,1) 100%);
+    border-radius:10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.paidBtn{
+    background: aliceblue;
+    height: 15px;
+    width: 48px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 21px;
+    font-weight: 600;
+}
+.paidtxt{
+    color:#12e35f;
+}
+.DBx{
+    width: 600px;
+    height: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    background-color: #e0e0c21c;
+}
+.DBx div span{
+    margin: 10px;
+}
+/*Payments Box*/
+.paymentsBx{
+    margin:15px;
+    grid-row-start:3;
+    grid-column-start:1;
+    grid-row-end: 6;
+    grid-column-end: 3;
+}
+.PayBox{
+    width: 800px;
+    height: 100px;
+    padding:20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: grid; 
+    grid-gap: 10px;
+    grid-template-columns:auto auto auto auto;
+}
+/*Shipping style*/
+.shippingBox{
+    margin: 15px;
+    grid-row-start:4;
+    grid-column-start: 1;
+    grid-row-end: 9;
+    grid-column-end: 3;
+}
+.headbar{
+    width:700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.shipBox{
+    width: 800px;
+    height: 60px;
+    padding:20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: grid; 
+    grid-gap: 10px;
+    grid-template-columns:auto auto auto auto auto;
+}
+/*sales box*/
+.SalesBox{
+    margin-top:15px ;
+    grid-row-start: 1;
+    grid-column-start: 5;
+    grid-row-end: 6;
+    grid-column-end: 7;
+}
+.salesBx{
+    width: 400px;
+    height: 580px;
+    padding:15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.B1{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+.pay{
+    color: rgb(58, 58, 154);
+    font-weight: 800;
+}
+.pal{
+    color:blue;
+    font-weight: 800;
+}
+.compheading{
+    font-weight: 600;
+}
+.fas{
+    color: #12e35f;
+}
+
+@media screen and (max-width:1000px)
+{
+    .Main{
+   display: grid; 
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr;
+   gap: 0px;
+   height: 100%;
+    }
+    .box{
+   grid-row-start: 1;
+   grid-column-start: 1;
+   grid-row-end: 3;
+   grid-column-end: 3;
+    }
+    .SalesBox{
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-row-end: 7;
+        grid-column-end: 1;
+        margin:15px; ;
+    }
+    .salesBx{
+        width:800px;
+        margin:15px;
+    }
+    .paymentsBx{
+        grid-row-start: 7;
+        grid-column-start: 1;
+        grid-row-end: 6;
+        grid-column-end: 3;
+    }
+    .shippingBox{
+        grid-row-start: 7;
+        grid-column-start: 1;
+        grid-row-end: 8;
+        grid-column-end: 3;
+    }
+}
